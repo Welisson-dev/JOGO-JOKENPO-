@@ -1,0 +1,44 @@
+<html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokenPô</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>JokenPô</h1>
+
+        <div class="buttons">
+            <button id="rock" onclick="playHuman('rock')">&#x1F44A;</button>
+            <button id="paper" onclick="playHuman('paper')">&#x1f590;</button>
+            <button id="scissors" onclick="playHuman('scissors')">&#x270c;</button>
+        </div>
+
+        <div class="choices">
+            <div class="choice">
+                <h3>Você</h3>
+                <img id="human-choice" src="./img/interrogacao.png" alt="Sua escolha">
+            </div>
+
+            <div class="choice">
+                <h3>PC</h3>
+                <img id="machine-choice" src="./img/interrogacao.png" alt="Escolha do PC">
+            </div>
+        </div>
+
+        <p class="result"></p>
+
+        <p class="your-score">Sua pontuação: <span id="human-score">0</span></p>
+        <p class="machine-score">Pontuação do PC: <span id="machine-score">0</span></p>
+
+    </div>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
